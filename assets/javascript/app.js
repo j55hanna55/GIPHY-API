@@ -70,8 +70,13 @@ $(document).ready(function () {
                     //put gifs in a div
                     var gifDiv = $("<div1>");
                     
-                    var gifRating = $("<p>").text("Rating " + results[i].rating);
+                    var gifRating = $("<p>").text("Rating: " + results[i].rating);
                     gifDiv.append(gifRating);
+
+                    var title = $("<p>").text("Title: " + results[i].title);
+                    gifDiv.append(title);
+
+
 
                     
                     var gifImage = $("<img>");
@@ -91,13 +96,13 @@ $(document).ready(function () {
     }
 
 
-    //list of already created ladies
+    
     displayGifButtons();
     addNewButton();
     removeLastButton();
 
 
-    //event listeners
+    
     $(document).on("click", ".animalName", displayGifs);
     $(document).on("click", ".image", function () {
         var state = $(this).attr('data-state');

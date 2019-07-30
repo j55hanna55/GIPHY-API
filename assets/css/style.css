@@ -1,6 +1,6 @@
   img {    
-    margin: 5px;
     overflow: hidden; 
+    margin-bottom: 40px;
   }
 
 
@@ -12,4 +12,5 @@
 
   #style{
     background-color: #9a9999;
+    text-align: center;
   }
