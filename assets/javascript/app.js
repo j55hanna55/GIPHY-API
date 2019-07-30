@@ -38,7 +38,7 @@ $(document).ready(function () {
     }
 
     //function to remove all
-    function removeLastButton() {
+    function clearAll() {
         $("removeGif").on("click", function () {
             topic.pop(animalName);
             displayGifButtons();
@@ -52,7 +52,7 @@ $(document).ready(function () {
     function displayGifs() {
         var animalName = $(this).attr("data-name");
 
-        var queryURL = "https://api.giphy.com/v1/gifs/search?api_key=aMeDNxP3lSDOxByAssmOnfH0oVCWAxqv&q=" + animalName + "&limit=10&lang=en&rating=G"
+        var queryURL = "https://api.giphy.com/v1/gifs/search?api_key=aMeDNxP3lSDOxByAssmOnfH0oVCWAxqv&q=" + animalName + "&limit=10&rating"
         $.ajax({
 
             url: queryURL,
@@ -99,7 +99,7 @@ $(document).ready(function () {
     
     displayGifButtons();
     addNewButton();
-    removeLastButton();
+    clearAll();
 
 
     
