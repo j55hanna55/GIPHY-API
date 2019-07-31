@@ -1,6 +1,11 @@
   img {    
     overflow: hidden; 
     margin-bottom: 40px;
+   width: 31%;
+   height: 1%;
+   max-height: 300px;
+   border: 7px solid #7777777a;
+
   }
 
 
